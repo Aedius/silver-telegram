@@ -73,6 +73,7 @@ services:
             - elk_stack
         ports:
             - "81:5601"
+
 networks:
     db:
     php:
