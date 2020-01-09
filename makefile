@@ -15,4 +15,10 @@ flog:
 
 init:
 	docker-compose -f docker-compose.yml -f sentry/docker-compose.yml run --rm sentry-base sentry upgrade --noinput
-	docker-compose -f docker-compose.yml -f sentry/docker-compose.yml exec sentry-base sentry createuser --email vincent@lemaire.family --password lemaire --superuser --no-input
+	docker-compose -f docker-compose.yml -f sentry/docker-compose.yml exec sentry-base sentry createuser --email vincent --password lemaire --superuser --no-input
+
+sentry-test: cc
+	docker-compose -f docker-compose.yml -f sentry/docker-compose.yml exec php bin/console sentry:test
+
+cc:
+	docker-compose -f docker-compose.yml -f sentry/docker-compose.yml exec php bin/console cache:clear
