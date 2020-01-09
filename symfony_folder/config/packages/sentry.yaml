@@ -1,5 +1,5 @@
 sentry:
-    dsn: "http://529a56257e794670afa3904e58a58dc3@sentry-worker:9000/2"
+    dsn: "http://529a56257e794670afa3904e58a58dc3@sentry-base:9000/2"
     options:
         environment: '%kernel.environment%'
         release: '0.0.1' #your app version

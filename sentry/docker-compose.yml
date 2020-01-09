@@ -47,7 +47,6 @@ services:
     volumes:
       - /srv/sentry/sentry:/var/lib/sentry/files
 
-
   sentry-redis:
     image: 'redis:latest'
 

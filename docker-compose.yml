@@ -11,8 +11,7 @@ services:
             MYSQL_DATABASE: symfony
             MYSQL_USER: symfony
             MYSQL_PASSWORD: symfony
-        networks:
-            - db
+
     php:
         container_name: php-fpm
         build: ./php-fpm
@@ -23,9 +22,7 @@ services:
             - ./logs/symfony:/var/www/symfony/var/log:cached
         depends_on: 
             - db
-        networks:
-            - db
-            - php
+
     nginx:
         container_name: nginx
         build: ./nginx
@@ -33,12 +30,7 @@ services:
             - "80:80"
         depends_on: 
             - php
-        networks:
-            - php
         volumes:
             - ./logs/nginx:/var/log/nginx:cached
             - ./symfony_folder:/var/www/symfony:cached
 
-networks:
-    db:
-    php:
