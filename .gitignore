@@ -1,17 +1,17 @@
 /logs
 
 ###> symfony/framework-bundle ###
-/repository-folder/.env.local
-/repository-folder/.env.local.php
-/repository-folder/.env.*.local
-/repository-folder/config/secrets/prod/prod.decrypt.private.php
-/repository-folder/public/bundles/
-/repository-folder/var/
-/repository-folder/vendor/
+/symfony_folder/.env.local
+/symfony_folder/.env.local.php
+/symfony_folder/.env.*.local
+/symfony_folder/config/secrets/prod/prod.decrypt.private.php
+/symfony_folder/public/bundles/
+/symfony_folder/var/
+/symfony_folder/vendor/
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
-/repository-folder/.phpunit
-/repository-folder/.phpunit.result.cache
-/repository-folder/phpunit.xml
+/symfony_folder/.phpunit
+/symfony_folder/.phpunit.result.cache
+/symfony_folder/phpunit.xml
 ###< symfony/phpunit-bridge ###
