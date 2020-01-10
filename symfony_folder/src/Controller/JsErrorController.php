@@ -18,7 +18,7 @@ class JsErrorController
 </script>
 
 <script >
-Sentry.init({ dsn: \'http://529a56257e794670afa3904e58a58dc3@symfony.localhost:880/2\' });
+Sentry.init({ dsn: \'http://43ff480386c74acfa67f146e58a15298@localhost:880/2\' });
 myUndefinedFunction'.$info.'();
 </script>
 

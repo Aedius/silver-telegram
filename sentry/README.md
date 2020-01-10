@@ -1,3 +1,5 @@
+see global README
+
 ### Initialize database
 
 If this is a new database, you'll need to run `upgrade`.
